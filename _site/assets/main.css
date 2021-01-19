@@ -150,7 +150,8 @@ a.site-title:hover { text-decoration: none !important; }
 
 @media screen and (max-width: 600px) { .home img { width: 90% !important; margin: 0; }
   .content-col-1, .content-col-2 { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); }
-  .content-col-2 { text-align: center; } }
+  .content-col-2 { text-align: center; }
+  #gallery { padding: 0; } }
 /** Posts */
 .post-header { margin-bottom: 30px; }
 
