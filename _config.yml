@@ -38,7 +38,7 @@ plugins:
   - jekyll-seo-tag
 header_pages: [] # This allows you to set pages you want to appear orderly in the navigation area.
 
-google_analytics: UA-172405871-1
+google_analytics: G-10FF4Q74R3
 
 # Exclude from processing.
 # The following items will not be processed, by default.
