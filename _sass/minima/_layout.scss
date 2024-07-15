@@ -304,8 +304,9 @@ a.site-title:hover {
     padding-left: 1rem;
   }
   img {
-    margin: .2rem;
-    border: solid 1px #b8daff;
+    border: solid 1px #888;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888;
   }
 }
 
