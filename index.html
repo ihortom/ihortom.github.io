@@ -1,33 +1,62 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <title>Grey Zone</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="/assets/grey-zone.ico">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="src/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container text-center text-secondary-emphasis">
+            <h1 >Grey Zone</h1>
+            <p class="lead">Mac desktop productivity applications</p>
 
-layout: home
----
+            <div class="row">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/multi-timer_icon.png" class="card-img-top" alt="Multi-Timer">
+                        <div class="card-body">
+                            <h4 class="card-title">Multi-Timer</h4>
+                            <p class="card-text"><small class="text-body-secondary fw-lighter">Version 2.1.0</small></p>
+                            <p class="card-text">Manage your time when multitasking.</p>
+                            <p><a href="/multi-timer" class="text-decoration-none">Find out more</a></p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            <a href="/download/Multi-Timer_v2.1.0.dmg" class="btn btn-primary">Download</a>
+                        </div>  
+                    </div>              
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/templatr_icon.png" class="card-img-top" alt="Templatr">
+                        <div class="card-body">
+                            <h4 class="card-title">Templatr</h4>
+                            <p class="card-text"><small class="text-body-secondary fw-lighter">Version 2.0.0</small></p>
+                            <p class="card-text">Generic templating application for a quick copy-and-paste action with easy to search templates maintained in YAML format with support for comments.</p>
+                            <p><a href="/templatr" class="text-decoration-none">Find out more</a></p>
+                        </div>
+                        <div class="card-footer text-body-secondary">
+                            <a href="https://github.com/ihortom/templatr/releases/download/v2.0.0/Templatr_v2.0.0.dmg" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div class="content-col content-col-1">
-    <p class="description promo">{{- site.description | escape -}}</p>
-    <p>&nbsp;v2.1.0</p>
-    <ul>
-        <li>Multiple named timers</li>
-        <li>Add and delete timers at will</li>
-        <li>Relative and absolute time</li>
-        <li>Add accompanying notes</li>
-        <li>Clickable URLs in note's read mode</li>
-        <li>Make timer recurring</li>
-        <li>Get notified</li>
-        <li>Hide inactive timers</li>
-        <li>Reorder timers</li>
-        <li>Persistent state</li>
-    </ul>
-    <div class="btn-group">
-        <a class="btn btn-primary btn-lg" href="/download/Multi-Timer_v2.1.0.dmg" role="button">macOS</a>
-    </div>
-    <div style="text-align: center;">
-        <p><em>The latest version is built only for macOS.</em></p>
-    </div>
-</div>
+            <div id="footer" class="text-start fw-lighter">
+                <p>
+                    <img src="/assets/grey-zone.png" class="avatar rounded-circle block">
+                    © <span id="year"></span><br>
+                    Ihor Tomilenko
+                </p>
+            </div>
+        </div>
 
-<div id="gallery" class="content-col content-col-2">
-    <img src="/assets/multi-timer.png" alt="Multi-Timer active">
-</div>
+        <script src="/src/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+
+.container {
+    width: 800px;
+    margin: 1rem auto 0;
+}
+.lead {
+    margin-bottom: 2rem;
+}
+.breadcrumbs {
+    margin-bottom: -1rem;
+}
+.card img{
+    width: 60px;
+    display: inline-block;
+    margin: 1rem auto 0;
+}
+#footer {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-top: var(--bs-border-width) solid;
+    border-color: var(--bs-border-color-translucent);
+    opacity: .75;
+}
+img.avatar {
+    width: 48px;
+    float: left;
+    margin: 0 1rem;
+}
+.screenshot img {
+    width: inherit;
+    border: solid 1px #888;
+    border-radius: 16px;
+    /* box-shadow: 5px 5px 10px #888; */
+}
+.alert {
+    opacity: .75;
+}
+pre {
+    color: var(--bs-body-color);
+    font-size: smaller;
+}

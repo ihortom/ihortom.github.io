@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <title>Grey Zone</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="/assets/templatr.ico">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../src/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+    <div class="container text-center text-secondary-emphasis">
+        <h1 >Templatr</h1>
+        <p class="lead">Mac desktop productivity application</p>
+        <p class="text-start breadcrumbs">
+            <a href="/" class="text-decoration-none icon-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg>HOME</a>
+        </p>
+        <hr>
+        <div class="row">
+            <div class="col screenshot">
+                <div class="alert alert-primary lead text-center" role="alert">
+                    Generic templating application for a quick copy-and-paste action with easy to search templates maintained in YAML format with support for comments
+                </div>
+                <img src="/assets/templatr.png">
+            </div>
+        </div> 
+        <div class="row" style="margin-top: 1.5rem;"">
+            <div class="col text-start">
+                <p>To add templates, select "Edit Templates" from the menu to open the default YAML editor. Add your one-line or multi-line templates. The templates could be accompanied by standard YAML comments, which will be conveyed to UI as well. Add _VAR_ to the templates whenever you need to be flexible with values. They could be easily replaced with the actual value from UI. Once saved, restart the application (could be achieved from "Relaunch App" menu).</p>
+                <p>The substitute values themselves could be optionally saved as a YAML list for a quick _VAR_ substitution. To create such a list, select "Edit Substitutes List", and restart the application on completion. Once created, the substitute values will be present in the dropdown box under "Substitute value" if the match found when starting to type. You still can use any string as _VAR_ substitution even if it is not in the substitute values list. It gives the flexibility of using either the predefined value or a custom one typed or pasted from the clipboard.</p>
+                <p class="fst-italic">Example of templates configuration:</p>
+                <div class="card">
+                    <div class="card-body">
+<pre class="fw-lighter">Templates type 1:
+    - "Copy me with _VAR_ value" # Just click on it to copy to clipboard
+    - "The _VAR_ could be replaced from UI with the actual value"
+Templates type 2:
+    - "Templates are grouped by type in UI"
+    - "They are easily searched with a keyword or filtered by types"
+Templates type 3:
+    - "Templates made up
+      of multiple lines are also supported.
+      
+Add an empty line to see this line on the new line." # This is a comment of the multiline template
+</pre>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;"">
+                    <p class="text-center">
+                        <a 
+                            href="https://github.com/ihortom/templatr/releases/download/v2.0.0/Templatr_v2.0.0.dmg" 
+                            class="btn btn-primary"
+                            role="button"
+                        >Download</a>
+                    </p>
+                </div>
+            </div>
+        </div>      
+        
+        <div id="footer" class="text-start fw-lighter">
+            <p>
+                <img src="/assets/grey-zone.png" class="avatar rounded-circle block">
+                © <span id="year"></span><br>
+                Ihor Tomilenko
+            </p>
+        </div>
+    </div>
+
+    <script src="/src/script.js"></script>
+    </body>
+</html>
