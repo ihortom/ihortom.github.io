@@ -8,6 +8,10 @@
       "1.2.1": "https://ihortom.github.io/download/Multi-Timer_v1.2.1.dmg",
       "1.2.2": "https://ihortom.github.io/download/Multi-Timer_v1.2.2.dmg",
       "2.0.0": "https://ihortom.github.io/download/Multi-Timer_v2.0.0.dmg",
-      "2.1.0": "https://ihortom.github.io/download/Multi-Timer_v2.1.0.dmg"
+      "2.1.0": "https://ihortom.github.io/download/Multi-Timer_v2.1.0.dmg",
+      "2.2.0": {
+        "x64":   "https://drive.google.com/file/d/1lH4emfZAGgYKBZ5fSp6KhSwHFlL6ToI5/view",
+        "arm64": "https://drive.google.com/file/d/17i4L3c1SiI84-BpaKq8I5yjMx9aL9Zf7/view"
+      }
     }
 }
