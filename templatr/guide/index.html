@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Templatr User Guide | Grey Zone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/assets/templatr.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div class="container text-secondary-emphasis">
+
+      <h3 style="margin-bottom: 1rem;">Templatr User Guide</h3>
+
+      <p class="text-start breadcrumbs d-flex align-items-center gap-1">
+        <a href="/" class="text-decoration-none icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+          </svg>HOME</a> /
+        <a href="/templatr/" class="text-decoration-none icon-link">Templatr</a>
+      </p>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p>Templatr keeps the text you type again and again, like replies,
+            commands and snippets, and copies any of it to your clipboard with
+            one click.</p>
+
+          <h4>Install</h4>
+
+          <ol>
+            <li>
+              Download the DMG for your Mac:
+              <ul>
+                <li><code>…_arm64.dmg</code>: Apple silicon Macs (M1 and
+                  newer)</li>
+                <li><code>…_x64.dmg</code>: Intel Macs</li>
+              </ul>
+            </li>
+            <li>Open the DMG and drag <strong>Templatr</strong> into
+              <strong>Applications</strong>.</li>
+            <li>
+              The first time you open it, macOS may say it can't verify the app.
+              Go to <strong>System Settings → Privacy &amp; Security</strong>,
+              scroll down and click <strong>Open Anyway</strong>.
+              You only need to do this once.
+            </li>
+          </ol>
+
+          <h4>Add your templates</h4>
+
+          <ol>
+            <li>
+              From the app menu, choose <strong>Edit Templates</strong>.
+              Your templates file opens in your default text editor.
+            </li>
+            <li>
+              <p>Add templates in groups. Each group has a name followed by a
+                list of templates:</p>
+
+              <pre><code class="language-yaml">Greetings:
+    - Hi _VAR_, thanks for reaching out! # Friendly opener
+    - Good morning _VAR_,
+Sign-offs:
+    - Best regards
+    - "Thanks again,
+
+      The Support Team" # Multi-line template
+</code></pre>
+
+              <ul>
+                <li>
+                  Anything after <code>#</code> is a <strong>comment</strong>.
+                  It appears under the template as a hint and is never copied.
+                </li>
+                <li>
+                  <code>_VAR_</code> is a <strong>placeholder</strong>
+                  you can fill in from the app (see below).
+                </li>
+                <li>
+                  For a template that spans several lines, put it in quotes
+                  and leave an empty line wherever you want a line break.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Save the file, then choose <strong>Relaunch App</strong>
+              from the menu to load your changes.
+            </li>
+          </ol>
+
+          <h4>Copy a template</h4>
+
+          <p>
+            Click a template, and it's on your clipboard.
+            It gets a green outline so you can see which one you copied last.
+            Paste it wherever you need it.
+          </p>
+
+          <h4>Find a template</h4>
+
+          <ul>
+            <li>
+              <strong>Search box:</strong>
+              type any word to show only the templates that contain it.
+            </li>
+            <li>
+              <strong>Checkbox next to the search box:</strong>
+              when ticked, the search also looks in comments,
+              so a template can be found by the words in its hint.
+            </li>
+            <li>
+              <strong>Pick template type:</strong>
+              show only one group. Choose <strong>All types</strong>
+              to show every group again, or <strong>Reset</strong>
+              to also clear the search.
+            </li>
+            <li>
+              <strong>✕ (red button):</strong> clears the search.
+            </li>
+          </ul>
+
+          <h4>Fill in placeholders (<code>_VAR_</code>)</h4>
+
+          <p>
+            Type a value, such as a name, into the <strong>Substitute
+              value</strong> box.
+            Every <code>_VAR_</code> on screen is replaced with it and
+            highlighted,
+            and that's what gets copied when you click.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Paste:</strong>
+              puts whatever is on your clipboard into the box.
+            </li>
+            <li>
+              <strong>✕:</strong>
+              clears the box, and the templates show <code>_VAR_</code> again.
+            </li>
+          </ul>
+
+          <h4>Save values you use often (optional)</h4>
+
+          <p>
+            From the menu, choose <strong>Edit Substitutes List</strong>
+            and add one value per line:
+          </p>
+
+          <pre><code class="language-yaml">- Alice
+- Bob
+- ACME Corp
+</code></pre>
+
+          <p>
+            Save, then <strong>Relaunch App</strong>.
+            When you type in the Substitute value box, matching values appear
+            in a list below it. Use <strong>↑ / ↓</strong> to pick one
+            and <strong>Enter</strong> to choose it, or click it.
+            You can still type any value that isn't on the list.
+          </p>
+
+          <h4>Light and dark mode</h4>
+
+          <p>
+            Click the <strong>sun / moon</strong> button in the top-right corner
+            to switch themes. Templatr remembers your choice.
+          </p>
+
+          <h4>Where your files are kept</h4>
+
+          <p>
+            Templates, saved values and settings are in a hidden
+            <strong><code>.templatr</code></strong> folder in your home folder.
+            Back up that folder to keep your templates, or copy it to another
+            Mac.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
