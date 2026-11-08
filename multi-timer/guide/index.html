@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Multi-Timer User Guide | Grey Zone</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/assets/multi-timer.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div class="container text-secondary-emphasis">
+
+      <h3 style="margin-bottom: 1rem;">Multi-Timer User Guide</h3>
+
+      <p class="text-start breadcrumbs d-flex align-items-center gap-1">
+        <a href="/" class="text-decoration-none icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+          </svg>HOME</a> /
+        <a href="/multi-timer/"
+          class="text-decoration-none icon-link">Multi-Timer</a>
+      </p>
+      <hr>
+      <div class="row">
+        <div class="col">
+
+          <p>
+            Multi-Timer lets you run several named countdown timers side by
+            side, so you can keep track of more than one task at a time.
+            You can give each timer a name and a note, and you get a
+            notification when it finishes.
+          </p>
+
+          <h4>Install</h4>
+          
+          <ol>
+            <li>
+              Download the DMG for your Mac:
+              <ul>
+                <li><code>…_arm64.dmg</code>: Apple silicon Macs (M1 and
+                  newer)</li>
+                <li><code>…_x64.dmg</code>: Intel Macs</li>
+              </ul>
+            </li>
+            <li>Open the DMG and drag <strong>Templatr</strong> into
+              <strong>Applications</strong>.</li>
+            <li>
+              The first time you open it, macOS may say it can't verify the app.
+              Go to <strong>System Settings → Privacy &amp; Security</strong>,
+              scroll down and click <strong>Open Anyway</strong>.
+              You only need to do this once.
+            </li>
+          </ol>
+
+          <h4>Getting started</h4>
+
+          <p>
+            When you first open Multi-Timer, it shows one empty timer.
+            If you have deleted all your timers, you'll see the message
+            <strong>"Hit + button above to add timer"</strong>.
+          </p>
+
+          <p>Each timer is a row with:</p>
+
+          <ul>
+            <li><strong>A time display</strong>, showing the time left</li>
+            <li>
+              <strong>Quick-time buttons</strong> (1, 2, 5, 10, 20, 30, 60)
+              and a <strong>clock button</strong>
+            </li>
+            <li>
+              <strong>A bell icon</strong>, which lights up when the timer
+              finishes
+            </li>
+            <li>
+              <strong>A progress bar</strong>, which shrinks as time runs out
+            </li>
+            <li>
+              <strong>A control panel</strong> with a name field and the timer's
+              own buttons
+            </li>
+          </ul>
+
+          <h4>The toolbar</h4>
+
+          <p>The toolbar across the top of the window applies to all timers:</p>
+
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>What it does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>➕ <strong>Add timer</strong></td>
+                <td>Adds a new empty timer at the bottom of the list.</td>
+              </tr>
+              <tr>
+                <td>⏹ <strong>Reset all timers</strong></td>
+                <td>Stops and clears every timer.</td>
+              </tr>
+              <tr>
+                <td>✖ <strong>Delete all timers</strong></td>
+                <td>
+                  Deletes every timer. You click it twice: the first click turns
+                  the icon into a trash can, and the second click deletes.
+                  If you move the pointer away before the second click,
+                  nothing is deleted.
+                </td>
+              </tr>
+              <tr>
+                <td>👁 <strong>Hide inactive timers</strong></td>
+                <td>
+                  Hides every timer that isn't counting down.
+                  A banner tells you how many are hidden.
+                  Click again to show them.
+                </td>
+              </tr>
+              <tr>
+                <td>🔧 <strong>Preferences</strong></td>
+                <td>Opens the settings.</td>
+              </tr>
+              <tr>
+                <td>ℹ <strong>About</strong></td>
+                <td>Shows the version number and checks for updates.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            While Preferences or About is open, the other toolbar buttons are
+            disabled
+            and the timer list is hidden. Click the same button again to go back
+            to your timers.
+          </p>
+
+          <h4>Setting a timer</h4>
+
+          <p>You can set a timer in two ways.</p>
+
+          <h5>Option 1: Set a duration with the quick-time buttons</h5>
+
+          <p>
+            Click a number to add that many minutes to the timer.
+            The countdown starts right away.
+          </p>
+
+          <p>
+            Each click adds to the time already on the timer,
+            so you can combine buttons:
+          </p>
+
+          <ul>
+            <li><strong>5</strong> → 5 minutes</li>
+            <li><strong>5</strong>, then <strong>5</strong> → 10 minutes</li>
+            <li>
+              <strong>60</strong>, then <strong>30</strong>,
+              then <strong>5</strong> → 1 hour 35 minutes
+            </li>
+          </ul>
+
+          <p>
+            You can also click a button while a timer is running to add more
+            time.
+          </p>
+
+          <h5>Option 2: Count down to a time of day with the clock</h5>
+
+          <p>
+            Use this when something has to happen at a specific time,
+            like a meeting at 14:30.
+          </p>
+
+          <ol>
+            <li>
+              Click the <strong>clock button</strong> (🕘) to the left of the
+              quick-time buttons. Hour and minute fields appear.
+            </li>
+            <li>
+              Type the <strong>hours</strong>. If the clock format is 12-hour,
+              pick <strong>AM</strong> or <strong>PM</strong> from the
+              drop-down next to the fields.
+            </li>
+            <li>Type the <strong>minutes</strong>.</li>
+            <li>
+              Press <strong>Enter</strong> or click the clock button again.
+              The countdown starts.
+            </li>
+          </ol>
+
+          <p>Notes on the clock:</p>
+
+          <ul>
+            <li>
+              If the time you enter has already passed today,
+              the timer counts down to that time <strong>tomorrow</strong>.
+            </li>
+            <li>
+              A field you fill in wrongly (for example, hour 25) turns red.
+              The timer doesn't start until you fix it.
+            </li>
+            <li>
+              The quick-time buttons are disabled while the clock fields are
+              open.
+            </li>
+            <li>
+              You can't edit the clock fields while the timer is running.
+              Reset the timer first.
+            </li>
+          </ul>
+
+          <h4>When a timer finishes</h4>
+
+          <p>When a timer reaches zero:</p>
+
+          <ul>
+            <li>
+              You get a <strong>macOS notification</strong> with the timer's
+              name.
+            </li>
+            <li>
+              The <strong>bell icon</strong> on that timer lights up.
+            </li>
+            <li>
+              The <strong>Dock icon</strong> shows a badge with the number
+              of finished timers.
+            </li>
+            <li>
+              If <strong>sound alarm</strong> is on, the sound you picked plays
+              (see <a href="#preferences">Preferences</a>).
+            </li>
+          </ul>
+
+          <p>
+            To acknowledge a finished timer, <strong>click the bell</strong>.
+            This turns the bell off, closes the notification,
+            and lowers the Dock badge count.
+          </p>
+
+          <h4>Timer controls</h4>
+
+          <p>The panel under each timer has these controls:</p>
+
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Control</th>
+                <th>What it does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Name field</strong></td>
+                <td>
+                  Type a name, such as "Tea" or "Standup".
+                  It appears in the notification and in the note's header.
+                  Unnamed timers show up as "Timer".
+                </td>
+              </tr>
+              <tr>
+                <td>⏹ <strong>Reset</strong> (red square)</td>
+                <td>
+                  Stops the timer, clears its time, and closes its
+                  notifications.
+                </td>
+              </tr>
+              <tr>
+                <td>📝 <strong>Note</strong></td>
+                <td>
+                  Opens the note for this timer.
+                  The button turns yellow when the note has text.
+                </td>
+              </tr>
+              <tr>
+                <td>🔁 <strong>Recurring</strong></td>
+                <td>
+                  Repeats the timer. When it reaches zero,
+                  it starts again from the same duration.
+                  The button is highlighted while recurring is on.
+                </td>
+              </tr>
+              <tr>
+                <td>⬆ / ⬇ <strong>Move up / down</strong></td>
+                <td>Moves the timer one place up or down the list.</td>
+              </tr>
+              <tr>
+                <td>✖ <strong>Delete</strong></td>
+                <td>
+                  Deletes this timer. Like Delete all, you click it twice.
+                  Move the pointer away before the second click to cancel.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Recurring timers</h5>
+
+          <p>
+            Recurring is useful for regular reminders,
+            such as stretching every 30 minutes.
+          </p>
+
+          <ol>
+            <li>
+              Set a duration, for example <strong>30</strong>.
+            </li>
+            <li>
+              Click the <strong>Recurring</strong> button.
+            </li>
+          </ol>
+
+          <p>
+            Each time the timer reaches zero, you get a notification
+            and it starts another 30-minute countdown.
+            Recurring timers don't add to the Dock badge.
+            Click <strong>Recurring</strong> again to turn it off,
+            or <strong>Reset</strong> to stop the timer.
+          </p>
+
+          <h4>Notes</h4>
+
+          <p>
+            Each timer can have a free-text note,
+            for things like a ticket number, a link, or what to do next.
+          </p>
+
+          <ol>
+            <li>
+              Click the <strong>Note</strong> button.
+              The note opens above the timer, with the time left
+              and the timer's name in its header.
+            </li>
+            <li>
+              Type your note. It is saved as you type.
+            </li>
+          </ol>
+
+          <p>The note header has three buttons:</p>
+
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>What it does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>✖ <strong>Close</strong></td>
+                <td>Closes the note. Your text is kept.</td>
+              </tr>
+              <tr>
+                <td>📖 / ✏ <strong>Read / Write mode</strong></td>
+                <td>
+                  Switches between editing and reading the note.
+                  In read mode, web addresses that start with
+                  <code>http</code> or <code>www.</code>
+                  become clickable links that open in your default browser.
+                </td>
+              </tr>
+              <tr>
+                <td>🗑 <strong>Delete note</strong></td>
+                <td>Clears the note's text and closes it.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Reordering timers</h4>
+
+          <p>You can reorder timers in two ways:</p>
+
+          <ul>
+            <li>
+              Click <strong>⬆</strong> or <strong>⬇</strong>
+              in a timer's control panel.
+            </li>
+            <li>
+              <strong>Drag</strong> a timer up or down the list
+              and drop it where you want it.
+            </li>
+          </ul>
+
+          <h4 id="preferences">Preferences</h4>
+
+          <p>
+            Click <strong>🔧 Preferences</strong> in the toolbar.
+          </p>
+
+          <table class="table table-striped align-middle">
+            <thead>
+              <tr>
+                <th>Setting</th>
+                <th>Options</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Time format</strong></td>
+                <td><code>HH:MM</code> / <code>HH:MM:SS</code></td>
+                <td>
+                  In <code>HH:MM</code>, the minutes are rounded up:
+                  4 minutes 10 seconds shows as <code>00:05</code>.
+                  Switch to <code>HH:MM:SS</code> to see seconds.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Clock format</strong></td>
+                <td>24H / 12H</td>
+                <td>
+                  Sets how you enter times in a timer's clock.
+                  12H adds the AM/PM choice.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Theme</strong></td>
+                <td>Light / Dark</td>
+                <td>Changes the app's colours.</td>
+              </tr>
+              <tr>
+                <td><strong>Sound alarm</strong></td>
+                <td>OFF / ON</td>
+                <td>
+                  Plays a sound when a timer finishes.
+                  When it's on, a drop-down appears where you pick the sound.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            <strong>Choosing an alarm sound:</strong>
+            Open the drop-down and hover over a sound to hear it.
+            Click one to select it. The sounds are Default, Bonus,
+            Facility, Futuristic, Treasure, Unlock, and Winning.
+          </p>
+
+          <h4>About and updates</h4>
+
+          <p>
+            Click <strong>ℹ About</strong> to see the app version
+            and the components it's built with.
+            Multi-Timer also checks whether a newer version is out:
+          </p>
+
+          <ul>
+            <li>
+              <strong>"You've got the latest version"</strong>:
+              no update is needed.
+            </li>
+            <li>
+              <strong>"Version X.Y.Z is available. Download"</strong>:
+              click <strong>Download</strong> to get the installer for your Mac
+              (Intel or Apple silicon) in your browser.
+            </li>
+          </ul>
+
+          <p>
+            If the check can't connect, for example because you're offline,
+            the update line doesn't appear.
+          </p>
+
+          <h4>What Multi-Timer remembers</h4>
+
+          <p>When you quit and reopen the app, Multi-Timer keeps:</p>
+
+          <ul>
+            <li>Your timers, in the same order</li>
+            <li>Timer names and notes</li>
+            <li>Which timers are hidden</li>
+            <li>All your preferences</li>
+          </ul>
+
+          <p>
+            It <strong>doesn't</strong> keep running countdowns.
+            Timers open with no time set, so restart them if you need to.
+          </p>
+
+          <h4>Tips</h4>
+
+          <ul>
+            <li>
+              <strong>Pomodoro:</strong>
+              Name a timer "Focus", click <strong>20</strong>
+              and <strong>5</strong> to set 25 minutes,
+              then turn on <strong>Recurring</strong>.
+            </li>
+            <li>
+              <strong>Clean up the list:</strong>
+              Use <strong>Hide inactive timers</strong>
+              so you only see timers that are counting down.
+            </li>
+            <li>
+              <strong>Find your links quickly:</strong>
+              Put links in a note and switch to read mode
+              to open them with one click.
+            </li>
+            <li>
+              <strong>Use HH:MM:SS for short timers:</strong>
+              The default <code>HH:MM</code> format rounds up,
+              so a 1-minute timer shows <code>00:01</code>
+              for most of the minute.
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
